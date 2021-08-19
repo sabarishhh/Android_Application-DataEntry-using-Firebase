@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#64b5f6"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="630dp"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/bgg"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/namel"
+        android:textColor="#3FC1C9"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Name:"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="300dp"
+        android:textColor="#AFB1AE"
+        android:background="@drawable/roundedittext"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:paddingLeft="15dp"/>
+    <TextView
+        android:id="@+id/rollnol"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Roll No:"
+        android:textColor="#3FC1C9"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/roll"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingLeft="15dp"
+        android:textColor="#AFB1AE"
+        android:background="@drawable/roundedittext"
+        android:layout_marginLeft="50dp"/>
+    <TextView
+        android:id="@+id/coursel"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:text="Course:"
+        android:textSize="20dp"
+        android:textColor="#3FC1C9"
+        android:fontFamily="sans-serif-black"/>
+
+    <EditText
+        android:id="@+id/course"
+        android:textColor="#AFB1AE"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:fontFamily="sans-serif-black"
+        android:background="@drawable/roundedittext"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/border_edit_text"
+        android:fontFamily="sans-serif-black"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        app:backgroundTint="#64b5f6" />
+
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Landing"
+    android:background="#64b5f6"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/otpbg"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="150dp">
+    </ImageView>
+    <!--Edittext for getting users phone number-->
+    <EditText
+        android:id="@+id/idEdtPhoneNumber"
+        android:layout_width="300dp"
+        android:paddingLeft="16dp"
+        android:textColorHint="#AFB1AE"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="50dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/roundedittext"
+        android:hint="Enter your phone number"
+        android:importantForAutofill="no"
+        android:inputType="phone" />
+
+    <!--Button for getting OTP-->
+
+    <!--Edittext for getting otp from user-->
+    <Button
+        android:id="@+id/idBtnGetOtp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtPhoneNumber"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_edit_text"
+        android:text="Get OTP"
+        android:textAllCaps="false"
+        app:backgroundTint="#64b5f6" />
+
+    <EditText
+        android:id="@+id/idEdtOtp"
+        android:layout_below="@id/idBtnGetOtp"
+        android:hint="Enter OTP"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:paddingLeft="16dp"
+        android:textColorHint="#AFB1AE"
+        android:textColor="@android:color/black"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/roundedittext"
+        android:importantForAutofill="no"
+        android:inputType="phone" />
+
+    <!--button for verifying user OTP-->
+    <Button
+        android:id="@+id/idBtnVerify"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtOtp"
+        android:text="Verify OTP"
+        android:background="@drawable/border_edit_text"
+        android:layout_marginLeft="130dp"
+        android:layout_width="150dp"
+        app:backgroundTint="#64b5f6"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false" />
+</LinearLayout>
+</LinearLayout>
